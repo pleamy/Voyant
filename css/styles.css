@@ -68,8 +68,7 @@ a:hover {
 
 
 
-
-
+/* Sections */
 section {
 	text-align: center;
 }
@@ -112,6 +111,14 @@ section#last {
 
 section#join {
 	background-color: #fff;
+	/*position: absolute;*/
+	/*width: 100%;*/
+}
+#contact {
+	width: 100%;
+	bottom: 0;
+	height: 200px;
+	background-color: #f0f0f0;
 }
 
 
