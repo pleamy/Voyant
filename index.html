@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Voyant</title>
+		<meta name="description" content="Voyant" />
+		<meta name="keywords" content="Voyant, journal, app, platform" />
+		<meta name="author" content="Voyant" />
+		<link rel="shortcut icon" href="../favicon.ico">
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+
+		<script src="js/modernizr.custom.js"></script>
+
+		<!-- <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3047516f-60a6-4210-838e-902adc1bd342.css"/> -->
+		 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+	</head>
+	<body>
+		<div class="container">
+			<div id="nav-bar">
+				<div id="nav"><ul>
+				  	<li id="logo">voyant</li>
+				  	<li class="nav-text">about</li>
+				  	<li class="nav-text">join</li>
+				  	<li class="nav-text">contact</li>
+				</ul></div>
+			</div>
+				
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<!-- App Screens --> 
+				<nav>
+					<a href="#fbsection1" class="cbp-fbcurrent"></a>
+					<a href="#fbsection2"></a>
+					<a href="#fbsection3"></a>
+				</nav>
+				<section id="fbsection1">
+					<div class="desc-text">
+					<h3>the journal that works for you.</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+				</section>
+				<section id="fbsection2">
+					<div class="desc-text">
+					<h3>the journal that works for you.</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+				</section>
+				<section id="fbsection3">
+					<div class="desc-text">
+					<h3>the journal that works for you.</h3>
+					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+					</div>
+				</section>
+
+				<!-- Join --> 
+				<!-- <section id="join">
+					Hey there
+				</section> -->
+			</div>
+		</div>
+
+		<!-- Sticky Nav
+		<script>
+		$(document).ready(function () {  
+	  		var top = $('#nav-bar').offset().top - parseFloat($('#nav-bar').css('marginTop').replace(/auto/, 100));
+		  	$(window).scroll(function (event) {
+			    // what the y position of the scroll is
+			    var y = $(this).scrollTop();
+
+			    // whether that's below the form
+			    if (y >= top) {
+			      // if so, ad the fixed class
+			      $('#nav-bar').addClass('fixed');
+			    } else {
+			      // otherwise remove it
+			      $('#nav-bar').removeClass('fixed');
+			    }
+			  });
+		});
+		</script> -->
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+		<script src="js/jquery.easing.min.js"></script>
+		<!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+		<script src="js/waypoints.min.js"></script>
+		<!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+	</body>
+</html>
