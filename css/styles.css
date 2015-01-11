@@ -1,5 +1,5 @@
 html, body {
-	background-color: #7CBB86; /*#E5F1E7;*/
+	background-color: #fff; /*#E5F1E7;*/
 	font-family:'Avenir Next W01';
 	font-weight: 300;
 	font-size: 1em;
@@ -102,24 +102,34 @@ p {
 
 
 section#middle {
-	background-color: #D7EADA;
+	background-color: #B7DABD;
 }
 
 section#last {
-	background-color: #B7DABD;
+	background-color: #D7EADA;
 }
 
 section#join {
 	background-color: #fff;
+
 	/*position: absolute;*/
 	/*width: 100%;*/
 }
-#contact {
+#join-text {
+	/*position: absolute;*/
+	overflow: hidden;
+	font-size: 1.6em;
+	padding-top: 20%;
+	text-align: center;
+	color: #fff;
+}
+/*#contact {
 	width: 100%;
 	bottom: 0;
 	height: 200px;
 	background-color: #f0f0f0;
-}
+}*/
+
 
 
 

@@ -21,7 +21,9 @@
 		<link rel="stylesheet" type="text/css" href="css/compo.css" />
 		<link rel="stylesheet" type="text/css" href="css/cont.css" />
 
-
+		<!-- join effect --> 
+		<link rel="stylesheet" type="text/css" href="css/normalize2.css" />
+		<link rel="stylesheet" type="text/css" href="css/component2.css" />
 
 		<script src="js/modernizr.custom.js"></script>
 
@@ -78,13 +80,21 @@
 					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
 					</div>
 				</section>
-
 				<!-- Join --> 
-				<!-- <section id="join">
-					Hey there
-					<div id="contact">
-					</div>
-				</section> -->
+				<section id="join">
+
+					<p id="join-text">Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+					<span class="input input--hoshi">
+						<input class="input__field input__field--hoshi" type="text" id="input-4" />
+						<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+							<span class="input__label-content input__label-content--hoshi">Name</span>
+						</label>
+					</span>
+
+					<!-- <div id="contact">
+					</div> -->
+				</section>
 			</div>
 		</div>
 
@@ -192,6 +202,48 @@
 				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
 					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
 				} );
+			})();
+		</script>
+
+
+
+
+
+
+		<!-- join effect --> 
+		<script>
+			(function() {
+				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+					// in case the input is already filled..
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
 			})();
 		</script>
 	</body>
