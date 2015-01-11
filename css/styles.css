@@ -1,5 +1,5 @@
 html, body {
-	background-color: #fff; /*#E5F1E7;*/
+	background-color: #F8FCF9; /*#E5F1E7;*/
 	font-family:'Avenir Next W01';
 	font-weight: 300;
 	font-size: 1em;
@@ -28,7 +28,7 @@ a:hover {
 
 #nav {
 	/* #E5F1E7 */
-	color: #f0f0f0;
+	color: #DFEEE2;
 	font-size: 1em;
 	/*font-family: 'Raleway', sans-serif;*/
 	font-family:'Avenir Next W01';
@@ -77,14 +77,24 @@ section {
 	position: absolute;
 	overflow: hidden;
 	/*position: fixed;*/
-	padding-left: 2%;
-	padding-top: 15%;
-	width: 30%;
-	left: 30;
+	/*padding-left: 2%;*/
+	/*padding-top: 15%;*/
+	/*width: 30%;*/
+	/*left: 30;*/
 	font-size: 1.4em;
 	font-weight: 300;
 	color: #282828;
 	text-align: center;
+
+
+	z-index: 9999;
+	right: 25%;
+	top: 50%;
+	width: 30%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 h3 {
 	text-align: center;
@@ -94,6 +104,7 @@ h3 {
 	/*color: #509D5D;*/
 }
 p {
+
 	text-align: center;
 	font-size: 1em;
 	color: #e5e5e5;
@@ -110,7 +121,7 @@ section#last {
 }
 
 section#join {
-	background-color: #fff;
+	background-color: #F8FCF9;
 
 	/*position: absolute;*/
 	/*width: 100%;*/
@@ -121,7 +132,7 @@ section#join {
 	font-size: 1.6em;
 	padding-top: 20%;
 	text-align: center;
-	color: #fff;
+	color: #F8FCF9
 }
 /*#contact {
 	width: 100%;

@@ -13,7 +13,7 @@ html, body,
 .cbp-fbscroller > nav {
 	position: fixed;
 	z-index: 9999;
-	right: 100px;
+	right: 80px;
 	top: 50%;
 	width: 26px;
 	-webkit-transform: translateY(-50%);
@@ -27,12 +27,12 @@ html, body,
 	position: relative;
 	z-index: 9999;
 	color: transparent;
-	width: 26px;
-	height: 26px;
+	width: 12px;
+	height: 12px;
 	outline: none;
 	margin: 25px 0;
 	border-radius: 50%;
-	border: 4px solid #fff;
+	border: 1px solid #F8FCF9;
 }
 
 .no-touch .cbp-fbscroller > nav a:hover {
@@ -40,7 +40,7 @@ html, body,
 }
 
 .cbp-fbscroller > nav a.cbp-fbcurrent {
-	background: #fff;
+	background: #F8FCF9;
 }
 
 /* background-attachment does the trick */
@@ -60,22 +60,24 @@ html, body,
 	background-image: url("../images/mockup.png");
 	background-size: 300px 520px;
 	background-repeat: no-repeat;
-	background-position: 30% 55%;
+	background-position: 20% 55%;
 }
 
 #fbsection2 {
-	background-color: #B7DABD;
+	background-color: #96C89E;
 	background-image: url("../images/mockup.png");
 	background-size: 300px 520px;
 	background-repeat: no-repeat;
-	background-position: 30% 55%;
+	background-position: 20% 55%;
 }
 
 #fbsection3 {
-	background-color: #D7EADA;
+	background-color: #ADD5B4;
+	/*background-color: #7CBB86;*/
+	/*opacity: .2;*/
 	background-image: url("../images/mockup.png");
 	background-size: 300px 520px;
 	background-repeat: no-repeat;
-	background-position: 30% 55%;
+	background-position: 20% 55%;
 }
 
