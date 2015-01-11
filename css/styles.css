@@ -8,6 +8,20 @@ html, body {
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 body, html { font-size: 100%; padding: 0; margin: 0;}
 
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
 a {
 	color: #f0f0f0;
 	text-decoration: none;
@@ -96,7 +110,7 @@ section {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-h3 {
+h2 {
 	text-align: center;
 	font-size: 1.4em;
 	font-weight: 500;
@@ -121,25 +135,45 @@ section#last {
 }
 
 section#join {
+	text-align: center;
 	background-color: #F8FCF9;
+
 
 	/*position: absolute;*/
 	/*width: 100%;*/
 }
 #join-text {
 	/*position: absolute;*/
-	overflow: hidden;
-	font-size: 1.6em;
-	padding-top: 20%;
+	/*overflow: hidden;*/
+	/*font-size: 1.6em;*/
+	padding-top: 15%;
+	/*margin: 30% 0% 0% 0%;*/
+	/*margin-bottom: 10%;*/
 	text-align: center;
 	color: #F8FCF9
 }
-/*#contact {
+h3 {
+	color: #282828;
+	font-size: 2em;
+	font-weight: 600;
+	padding-bottom: 2%;
+}
+
+#contact {
 	width: 100%;
+	/*padding-bottom: -300px;*/
+	/*margin-bottom: -200px;*/
 	bottom: 0;
-	height: 200px;
+	height: 150px;
 	background-color: #f0f0f0;
-}*/
+}
+
+h4 {
+	text-align: left;
+	padding: 50px;
+	font-weight: 400;
+}
+
 
 
 
