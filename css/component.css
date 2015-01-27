@@ -1,83 +1,452 @@
 /* CoDrops */
 
 /* Set all parents to full height */
-html, body, 
-.container,
-.cbp-fbscroller,
-.cbp-fbscroller section { 
-	height: 100%; 
+
+
+
+
+@media (min-width: 992px) {
+	html, body, .container, .cbp-fbscroller, .cbp-fbscroller section { 
+		height: 100%; 
+	}
+	/* The nav is fixed on the right side  and we center it by translating it 50% 
+	(we don't know it's height so we can't use the negative margin trick) */
+	.cbp-fbscroller > nav {
+		position: fixed;
+		z-index: 9999;
+		right: 80px;
+		top: 50%;
+		width: 26px;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	.cbp-fbscroller > nav a {
+		display: block;
+		position: relative;
+		z-index: 9999;
+		color: transparent;
+		width: 12px;
+		height: 12px;
+		outline: none;
+		margin: 25px 0;
+		border-radius: 50%;
+		border: 1px solid #F8FCF9;
+	}
+	.no-touch .cbp-fbscroller > nav a:hover {
+		background: rgba(255,255,255,0.6);
+	}
+	.cbp-fbscroller > nav a.cbp-fbcurrent {
+		background: #F8FCF9;
+	}
+	/* background-attachment does the trick */
+	.cbp-fbscroller section {
+		position: relative;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.no-touch .cbp-fbscroller section {
+		background-attachment: fixed;
+	}
+	#fbsection1 {
+		background-attachment: fixed;
+		background-color: #7CBB86;
+		background-image: url("../images/home_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 22% 75%;
+	}
+	#fbsection2 {
+		background-attachment: fixed;
+		background-color: #96C89E;
+		background-image: url("../images/description_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 22% 75%;
+	}
+	#fbsection3 {
+		background-attachment: fixed;
+		background-color: #7CBB86; /*#AAD5B1; #D5EAD9;*/
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 22% 75%;
+	}
+	#fbsection4 {
+		background-attachment: fixed;
+		background-color: #96C89E; /*#D5EAD9;*/
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/entries_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 22% 75%;
+	}
+	section#join {
+		height: 95%;
+	}
+	.desc-text {
+		/*display: inline-block;*/
+		position: absolute;
+		overflow: hidden;
+		right: 20%;
+		top: 50%;
+		width: 30%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	/*#fbsection3 h2 {
+		color: #fff;
+	}
+	#fbsection3 p {
+		color: #f0f0f0;
+	}*/
+
+	h2, p {
+		text-align: left;
+	}
+	h2 {
+		font-size: 2em;
+		padding-bottom: 15px;
+	}
+	p {
+		font-size: 1.3em;
+		font-weight: 400;
+	}
 }
 
-/* The nav is fixed on the right side  and we center it by translating it 50% 
-(we don't know it's height so we can't use the negative margin trick) */
-.cbp-fbscroller > nav {
-	position: fixed;
-	z-index: 9999;
-	right: 80px;
-	top: 50%;
-	width: 26px;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+/* width 992 */
+@media (max-width: 992px) and (min-width: 768px) {
+	html, body, .container, .cbp-fbscroller { 
+		/* , .cbp-fbscroller section */
+		height: 110%; 
+	}
+	/* shouldn't have fbsection? */
+	body {
+		background-color: #7CBB86;
+	}
+	/* background-attachment does the trick */
+	.cbp-fbscroller section {
+		position: relative;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	/*.no-touch .cbp-fbscroller section {
+		background-attachment: fixed;
+	}*/
+	#fbsection1 {
+		height: 82%;
+		background-color: #7CBB86;
+		background-image: url("../images/home_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	#fbsection2 {
+		height: 82%;
+		background-color: #96C89E;
+		background-image: url("../images/description_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	#fbsection3 {
+		height: 82%;
+		background-color: #7CBB86;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	#fbsection4 {
+		height: 82%;
+		background-color: #96C89E;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/entries_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	.desc-text {
+		width: 560px;
+		/*display: inline-block;*/
+		/*position: absolute;
+		overflow: hidden;
+		right: 20%;
+		top: 50%;
+		width: 30%;
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);*/
+	}
+	section#join { 
+		height: 55%;
+	}
+	h2, p {
+		text-align: center;
+		margin-top: 640px;
+	}
+	h2 {
+		font-size: 1.5em;
+		padding-bottom: 15px;
+	}
+	p {
+		margin-top: 0%;
+		font-size: 1.2em;
+		font-weight: 400;
+	}
+
 }
 
-.cbp-fbscroller > nav a {
-	display: block;
-	position: relative;
-	z-index: 9999;
-	color: transparent;
-	width: 12px;
-	height: 12px;
-	outline: none;
-	margin: 25px 0;
-	border-radius: 50%;
-	border: 1px solid #F8FCF9;
+@media (max-width: 768px) and (min-width: 468px) {
+	html, body, .container, .cbp-fbscroller, .cbp-fbscroller section { 
+		height: 100%; 
+	}
+	#fbsection1 {
+		height: 117%;
+		background-color: #7CBB86;
+		background-image: url("../images/home_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	#fbsection2 {
+		height: 114%;
+		background-color: #96C89E;
+		background-image: url("../images/description_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	#fbsection3 {
+		height: 114%;
+		background-color: #7CBB86;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	#fbsection4 {
+		height: 116%;
+		background-color: #96C89E;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/entries_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	section#join {
+		height: 65%;
+	}
+	.desc-text {
+		width: 400px !important;
+		z-index: 9999;
+	}
+	h2, p {
+		text-align: center;
+		margin-top: 655px;	
+	}
+	p {
+		margin-top: 0px;
+		font-weight: 400;
+	}
 }
 
-.no-touch .cbp-fbscroller > nav a:hover {
-	background: rgba(255,255,255,0.6);
+@media (max-width: 468px) and (min-width: 399px) {
+	html, body, .container, .cbp-fbscroller, .cbp-fbscroller section { 
+		height: 100%; 
+	}
+	#logo {
+		font-size: .8em;
+		font-weight: 500;
+	}
+	#logo img {
+		width: 23px;
+		height: auto;
+		margin-top: -4px;
+		vertical-align: middle;
+	}
+	.nav-text {
+		font-weight: 500;
+		font-size: .8em;
+	}
+	#fbsection1 {
+		height: 126%;
+		background-color: #7CBB86;
+		background-image: url("../images/home_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	#fbsection1 h2 {
+		margin-top: 680px;
+	}
+	#fbsection2 {
+		height: 120%;
+		background-color: #96C89E;
+		background-image: url("../images/description_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+	}
+	#fbsection2 h2 {
+		margin-top: 650px;
+	}
+	#fbsection3 {
+		height: 112%;
+		background-color: #7CBB86;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	#fbsection4 {
+		height: 118%;
+		background-color: #96C89E;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/entries_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 25%;
+	}
+	#fbsection4 h2 {
+		margin-top: 630px;
+	}
+	section#join {
+		height: 60%;
+	}
+	.desc-text {
+		width: 300px !important;
+		z-index: 9999;
+	}
+	h2, p {
+		text-align: center;
+		margin-top: 615px;
+	}
+	p {
+		margin-top: 0px;
+		font-weight: 400;
+	}
 }
 
-.cbp-fbscroller > nav a.cbp-fbcurrent {
-	background: #F8FCF9;
-}
-
-/* background-attachment does the trick */
-.cbp-fbscroller section {
-	position: relative;
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.no-touch .cbp-fbscroller section {
-	background-attachment: fixed;
-}
-
-#fbsection1 {
-	background-color: #7CBB86;
-	background-image: url("../images/mockup.png");
-	background-size: 300px 520px;
-	background-repeat: no-repeat;
-	background-position: 20% 55%;
-}
-
-#fbsection2 {
-	background-color: #96C89E;
-	background-image: url("../images/mockup.png");
-	background-size: 300px 520px;
-	background-repeat: no-repeat;
-	background-position: 20% 55%;
-}
-
-#fbsection3 {
-	background-color: #ADD5B4;
-	/*background-color: #7CBB86;*/
-	/*opacity: .2;*/
-	background-image: url("../images/mockup.png");
-	background-size: 300px 520px;
-	background-repeat: no-repeat;
-	background-position: 20% 55%;
+@media (max-width: 399px) {
+	html, body, .container, .cbp-fbscroller, .cbp-fbscroller section { 
+		height: 100%; 
+	}
+	#logo {
+		font-size: .8em;
+		margin-left: -10px;
+		font-weight: 500;
+	}
+	#logo img {
+		width: 23px;
+		height: auto;
+		margin-top: -4px;
+		vertical-align: middle;
+		margin-left: -10px;
+	}
+	.nav-text {
+		font-size: .8em;
+		margin-right: -5px;
+		font-weight: 500;
+		color: #fff;
+	}
+	#fbsection1 {
+		height: 135%;
+		background-color: #7CBB86;
+		background-image: url("../images/home_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 35%;
+	}
+	#fbsection1 h2{
+		margin-top: 650px;
+	}
+	#fbsection2 {
+		height: 132%;
+		background-color: #96C89E;
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+	}
+	#fbsection2 h2 {
+		margin-top: 630px;
+	}
+	#fbsection3 {
+		height: 128%;
+		background-color: #7CBB86;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/stats_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+	}
+	#fbsection3 h2 {
+		margin-top: 625px;
+	}
+	#fbsection4 {
+		height: 135%;
+		background-color: #96C89E;
+		/*background-color: #7CBB86;*/
+		/*opacity: .2;*/
+		background-image: url("../images/entries_mockup.png");
+		/*background-size: 25% 90%;*/
+		background-size: 320px 555px;
+		background-repeat: no-repeat;
+		background-position: 50% 30%;
+	}
+	section#join {
+		height: 80%;
+	}
+	.desc-text {
+		width: 300px !important;
+		z-index: 9999;
+	}
+	h2, p {
+		text-align: center;
+		margin-top: 635px;
+	}
+	p {
+		margin-top: 0px;
+		font-weight: 400;
+	}
 }
 

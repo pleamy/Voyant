@@ -8,7 +8,9 @@
 		<meta name="description" content="Voyant" />
 		<meta name="keywords" content="Voyant, journal, app, platform" />
 		<meta name="author" content="Voyant" />
-		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="shortcut icon" href="images/logo_flat.ico">
+
+		<!-- <link rel="stylesheet" type="text/css" href="css/skeleton.css" /> -->
 
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -22,21 +24,33 @@
 
 		<!-- <link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/3047516f-60a6-4210-838e-902adc1bd342.css"/> -->
 		 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-58879382-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+		<!--script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"3047b292446f2ffa02e807126","lid":"282f055b3b"}) })</script-->
 	</head>
 	<body>
 		<div class="container">
 			<div id="nav-bar">
 				<div id="nav"><ul>
-				  	<li id="logo">voyant</li>
-				  	<li class="nav-text">join the beta</li>
-				  	<li class="nav-text">contact
+				  	<li id="logo"><a href="http://www.voyant.me"><img id="voyant" src="images/logo_flat.png">
+				  		<span id="logo-text">voyant</span></a></li>
+				  	<li id="beta-nav" class="nav-text">beta invite</li>
+				  	<li id="contact-nav" class="nav-text">contact
 				  	</li>
 				</ul></div>
 			</div>
 
-
-			<!-- parallax?? 
-				RESPONSIVE -->
 				
 			<div id="cbp-fbscroller" class="cbp-fbscroller">
 				<!-- App Screens --> 
@@ -44,51 +58,138 @@
 					<a href="#fbsection1" class="cbp-fbcurrent"></a>
 					<a href="#fbsection2"></a>
 					<a href="#fbsection3"></a>
+					<a href="fbsection4"></a>
 				</nav>
 				<section id="fbsection1">
 					<div class="desc-text">
-					<h2>the journal that works for you.</h2>
-					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+						<h2>convenient journaling, anywhere you go.</h2>
+						<p>Voyant is an elegant journaling system that enhances your journaling experience with personalized mood analytics. Simply tag a mood, enter a thought, and let Voyant take care of the rest.</p>
 					</div>
 				</section>
 				<section id="fbsection2">
 					<div class="desc-text">
-					<h2>the journal that works for you.</h2>
-					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+						<h2>jot down a thought anytime, anyplace.</h2>
+						<p>Quickly enter a thought on your way to work, while you're waiting in line for coffee, or during a short break. Voyant automatically saves the time and date of your post for you.</p>
 					</div>
 				</section>
 				<section id="fbsection3">
 					<div class="desc-text">
-					<h2>the journal that works for you.</h2>
-					<p>Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+						<h2>track your patterns each week.</h2>
+						<p>View each week's progress with Voyant's breakdown of your entries and moods. Never miss a day again with Voyant's daily logging reminders.</p>
 					</div>
 				</section>
-				<!-- Join --> 
-				 <!-- class="clearfix"-->
-
-					<!-- <p id="join-text">Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p> -->
+				<section id="fbsection4">
+					<div class="desc-text">
+						<h2>all your thoughts, in one easy location.</h2>
+						<p>Voyant provides a secure, centralized location for all your entries. No more scanning through pages of notes -- just enter the date you're looking for, or search by a keyword.</p>
+					</div>
+				</section>
 				<section id="join">
 					<div id="join-text">
-						<h3>join the beta</h3>
+						<h3>start your journey today.</h3>
 
-						<span class="input input--hoshi">
-							<input class="input__field input__field--hoshi" type="text" id="input-4" />
-							<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
-								<span class="input__label-content input__label-content--hoshi">Email</span>
-							</label>
-						</span>
-					</div>
-					</section>
+						<!-- Begin MailChimp Signup Form -->
+						<!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"> -->
+						<style type="text/css">
+							#mc_embed_signup{background:#F8FCF9; clear:left;
+							font-family:'Avenir Next W01'; font:14px; 
+							text-align: center;}
 
-					<div id="contact">
-						<h4>Questions? Contact the Voyant Team.</h4>
+							input { border: 0; outline: 0; background: transparent; border-bottom: 2px solid #7CBB86; }
+							.mailc-email { background-color: transparent;
+								color: #7CBB86; padding: 10px; border-bottom: 2px solid #7CBB86; }
+							.mailc-email:focus { color: #7CBB86; border-bottom: 2px solid #7CBB86; }
+							.textarea:focus, input:focus { outline: 0; }
+							.mailc-label { color: #272727; font-weight: 500; }
+							.mailc-btn { text-transform: lowercase; color: #555; margin: 40px 20px 20px 20px; border-radius: 20px; border: 1px solid #555; background-color: #F8FCF9; height: 40px; }
+							.mailc-btn:hover { background-color: #7CBB86; color: #fff; border: 1px solid #7CBB86; }
+
+							input { width: 200px; }
+							::-webkit-input-placeholder {
+							    text-align:center;
+							}
+							:-moz-placeholder {
+							    text-align:center;
+							}
+							:-ms-input-placeholder {
+							    text-align:center;
+							}
+
+							/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+							   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+						</style>
+						<div id="mc_embed_signup">
+							<form action="//voyant.us10.list-manage.com/subscribe/post?u=3047b292446f2ffa02e807126&amp;id=282f055b3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							    <div id="mc_embed_signup_scroll">
+								<label for="mce-EMAIL" class="mailc-label"></label>
+								<input type="email" value="" name="EMAIL" class="email mailc-email" id="mce-EMAIL" placeholder="email address" required>
+							    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_3047b292446f2ffa02e807126_282f055b3b" tabindex="-1" value=""></div>
+							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button mailc-btn"></div>
+							    </div>
+							</form>
+						</div>
+						<!--End mc_embed_signup-->
+
+
+						<!-- <form>
+							<span class="input input--hoshi">
+								<input class="input__field input__field--hoshi" type="text" id="input-4" />
+								<label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+									<span class="input__label-content input__label-content--hoshi">Email</span>
+								</label>
+							</span>
+							<div id="join-button">
+								<input type="button" value="request an invite">
+							</div>
+						</form> -->
 					</div>
+				</section>
+
+				<div id="contact">
+					<h4>Questions? Contact the <a href="mailto:voyantapp@gmail.com" id="mail">Voyant Team.</a></h4>
 				</div>
-
-				
-			<!-- </div> -->
+			</div>
 		</div>
 
+		<!-- click brings to appropriate section --> 
+		<script>
+			$("#beta-nav").click(function(e) {
+				var offset = 20;
+
+				$('html, body').animate({
+					"scrollTop": $("#join").offset().top + offset
+				}, 1200);
+			});
+
+			$("#contact-nav").click(function(e) {
+				var offset = 20;
+
+				$('html, body').animate({
+					"scrollTop": $("#contact").offset().top + offset
+				}, 1200);
+			});
+		</script>
+
+
+		<script>
+		$(document).ready(function () {  
+	  		var top = $('#nav-bar').offset().top - parseFloat($('#nav-bar').css('marginTop').replace(/auto/, 100));
+		  	$(window).scroll(function (event) {
+			    // what the y position of the scroll is
+			    var y = $(this).scrollTop();
+
+			    // whether that's below the form
+			    if (y >= top) {
+			      // if so, ad the fixed class
+			      $('#nav-bar').addClass('fixed');
+			    } else {
+			      // otherwise remove it
+			      $('#nav-bar').removeClass('fixed');
+			    }
+			  });
+		});
+		</script>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
@@ -105,7 +206,7 @@
 		</script>
 
 
-		<!-- join effect --> 
+		<!-- join effect by Codrop --> 
 		<script>
 			(function() {
 				// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
